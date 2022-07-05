@@ -14,9 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: getlatest
-      use: actions/checkout@v2
+      uses: actions/checkout@v2
       
     -name: Sync
       run: |
+        set -eu
         echo 'ran'
-      
+        echo 'hi'
+        exit 0
