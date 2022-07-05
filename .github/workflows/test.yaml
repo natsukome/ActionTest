@@ -1,0 +1,22 @@
+name: test
+
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'test/**'
+      - '!ignore/**'
+      
+jobs:
+  test-first:
+    name: firstfirst
+    runs-on: ubuntu-latest
+    steps:
+    - name: getlatest
+      use: actions/checkout@v2
+      
+    -name: Sync
+      run: |
+        echo 'ran'
+      
