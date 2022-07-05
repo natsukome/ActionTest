@@ -16,7 +16,7 @@ jobs:
     - name: getlatest
       uses: actions/checkout@v2
       
-    -name: Sync
+    - name: Sync
       run: |
         set -eu
         echo 'ran'
